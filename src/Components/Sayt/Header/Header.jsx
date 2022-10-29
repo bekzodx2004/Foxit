@@ -62,6 +62,7 @@ const Header = () => {
           <i className="fa-regular fa-bell"></i>
           <div className="notif"></div>
         </button>
+        <i className=""></i>
       </div>
     </div>
   );
