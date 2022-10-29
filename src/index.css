@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'encode sans';
+  src: url(./Components/fonts/Encode_Sans/static/EncodeSans_Condensed/EncodeSans_Condensed-SemiBold.ttf);
+}

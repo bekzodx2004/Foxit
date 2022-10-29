@@ -1,0 +1,115 @@
+.header{
+    margin: 0px 80px;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &>.header__left{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        &>img{
+            width: 136px;
+        }
+
+        &>ul{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+
+            &>li{
+                margin: 20px;
+                list-style: none;
+                font-family: inherit;
+                overflow: hidden;
+
+                &>a{
+                    text-decoration: none;
+                    font-family: 'encode sans';
+                    font-weight: bold;
+                    color: #000;
+                }
+                &>i{
+                    font-size: 10px;
+                    margin: 10px;
+                    margin-top: 0;
+                }
+
+                &>.chiziq_hover{
+                    width: 100%;
+                    border-radius: 2px;
+                    height: 1px;
+                    border-bottom: 1px solid #FF184E;
+                    transition: all 500ms;
+
+                    transform: translate(-102%);
+                }
+            }
+
+            &>li :hover ~ .chiziq_hover{
+                transform: translate(0);
+            }
+        }
+    }
+
+    &>.header__right{
+        display: flex;
+        align-items: center;
+        &>a{
+            display: block;
+            background: #FF184E;
+            border: none;
+            width: 95px;
+            height: 40px;
+            box-sizing: border-box;
+            line-height: 42px;
+            text-align: center;
+            font-family: 'encode sans';
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px;
+        }
+        &>a:hover{
+            box-shadow:0 0 15px #FF184E;
+        }
+
+        &>button{
+            position: relative;
+            border: none;
+            background-color: transparent;
+            &>i{
+                font-size: 30px;
+            }
+            &>.notif{
+                position: absolute;
+                top: -5px;
+                right: -5px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50px;
+                background-color: #FF184E;
+                animation: notif 1s linear  infinite ;
+            }
+            @keyframes notif {
+                0%{
+                    transform: scale(1);
+                }
+
+               
+                50%{
+                    transform: scale(2);
+
+                }
+
+                100%{
+                    transform: scale(1);
+
+                }
+            }
+        }
+    }
+}
